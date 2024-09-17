@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Опис сторінки">
+    <title>Назва сторінки</title>
+  </head>
+  <body>
+    <header>
+      <h1>Логотип або назва сайту</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Головна</a></li>
+          <li><a href="#about">Про нас</a></li>
+          <li><a href="#services">Послуги</a></li>
+          <li><a href="#contact">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Основний контент</h2>
+
+        <div style="margin: 20px">Це основна частина сторінки.</div>
+
+        <table border="1" style="margin-bottom: 3" >
+            <thead>
+              <tr>
+                <th>Назва товару</th>
+                <th>Кількість</th>
+                <th>Ціна</th>
+                <th>Test</th>
+    
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Телефон</td>
+                <td>2</td>
+                <td >5000 грн</td>
+                <td colspan="2">Test</td>
+              </tr>
+              <tr>
+                <td>Ноутбук</td>
+                <td>1</td>
+                <td colspan="2">15000 грн</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">Загальна сума</td>
+                <td>20000 грн</td>
+              </tr>
+            </tfoot>
+          </table>
+          
+          <form action="/submit" method="post">
+            <label for="dropdown">Выбор:</label>
+            <select id="dropdown" name="options">
+              <option value="option1">Опция 1</option>
+              <option value="option2">Опция 2</option>
+              <option value="option3">Опция 3</option>
+              <option value="option4">Опция 4</option>
+            </select>
+
+            <label for="name">Ім'я:</label>
+            <input type="text" id="name" name="name" required><br>
+          
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+          
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" ><br>
+          
+            <label for="gender">Стать:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Чоловік</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Жінка</label><br>
+
+            <label for="test">Стать:</label>
+            <input type="radio" id="male" name="test" value="male">
+            <label for="male">1</label>
+            <input type="radio" id="female" name="test" value="female">
+            <label for="female">2</label><br>
+          
+            <label for="hobbies">Хобі:</label>
+            <input type="checkbox" id="sport" name="hobbies" value="sport">
+            <label for="sport">Спорт</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Музика</label><br>
+          
+            <label for="file">Завантажити файл:</label>
+            <input type="file" id="file" name="file"><br>
+          
+            <input type="submit" value="Надіслати">
+          </form>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Wikipedia" width="100" height="100">
+        <img src="oblaka.jpg" alt="Wikipedia" width="100" height="100">
+
+        <iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/ryosJYNOTjI"
+        title="YouTube video"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+        </iframe>
+
+        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            <text x="50" y="55" font-size="20" text-anchor="middle" fill="black">SVG</text>
+        </svg>
+    
+    </section>
+
+      <article>
+        <h3>Стаття</h3>
+        <p>Це стаття або допис, що може існувати незалежно.</p>
+      </article>
+    </main>
+
+    <aside>
+      <p>Бокова панель з додатковою інформацією.</p>
+    </aside>
+
+    <footer>
+      <p>&copy; 2024 Всі права захищені.</p>
+    </footer>
+  </body>
+</html>
+
