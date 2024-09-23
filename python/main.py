@@ -13,3 +13,5 @@ average = total / count
 print(total)
 print(count)
 
+print(total)
+print(count)
