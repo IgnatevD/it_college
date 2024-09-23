@@ -13,6 +13,3 @@ average = total / count
 print(total)
 print(count)
 
-# Виводимо результат
-print("Середнє значення чисел у списку:", average)
-
