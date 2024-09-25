@@ -1,32 +1,86 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Опис сторінки">
-    <title>Назва сторінки</title>
-  </head>
-  <body>
-    <header>
-      <h1>Логотип або назва сайту</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Головна</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#contact">Контакти</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Приклад селекторів та кольорів</title>
+  <style>
+    /* Селектор тегу */
+    h1 {
+      color: blue;
+    }
 
-    <main>
-      <iframe src="https://learningapps.org/4938456" width="100%" height="600"></iframe>
+    .head {
+      color: red;
+    }
 
-    </main>
+    /* Селектор класу */
+    .highlight {
+      background-color: yellow;
+    }
 
-    <footer>
-      <p>&copy; 2024 Всі права захищені.</p>
-    </footer>
-  </body>
+    /* Селектор ідентифікатора */
+    #special {
+      font-size: 20px;
+      color: #ff5733;
+    }
+
+    /* Селектор нащадка */
+    div p {
+      color: green;
+    }
+
+    /* Селектор псевдокласу */
+    a:hover {
+      color: red;
+    }
+
+    .highlight:hover {
+      color: rgb(85, 255, 0);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="head" style="color: purple">Заголовок сторінки</h1>
+  <p class="highlight">Це абзац з жовтим фоном.</p>
+  <p id="special">Це абзац з іншим стилем через id.</p>
+
+  <div>
+    <p>Абзац всередині div, який буде зеленого кольору.</p>
+  </div>
+
+  <a href="#" class="highlight">Наведіть на це посилання, щоб змінити його колір.</a>
+  <a href="#">Наведіть на це посилання, щоб змінити його колір.</a>
+
+  <form action="/submit" method="post">
+    <label for="name">Ім'я:</label>
+    <input type="text" id="name" name="name" required><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+  
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required><br>
+  
+    <label for="gender">Стать:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Чоловік</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Жінка</label><br>
+  
+    <label for="hobbies">Хобі:</label>
+    <input type="checkbox" id="sport" name="hobbies" value="sport">
+    <label for="sport">Спорт</label>
+    <input type="checkbox" id="music" name="hobbies" value="music">
+    <label for="music">Музика</label><br>
+  
+    <label for="file">Завантажити файл:</label>
+    <input type="file" id="file" name="file"><br>
+  
+    <input type="submit" value="Надіслати">
+  </form>
+
+</body>
 </html>
 
