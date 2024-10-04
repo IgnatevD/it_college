@@ -1,86 +1,57 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Приклад селекторів та кольорів</title>
-  <style>
-    /* Селектор тегу */
-    h1 {
-      color: blue;
-    }
-
-    .head {
-      color: red;
-    }
-
-    /* Селектор класу */
-    .highlight {
-      background-color: yellow;
-    }
-
-    /* Селектор ідентифікатора */
-    #special {
-      font-size: 20px;
-      color: #ff5733;
-    }
-
-    /* Селектор нащадка */
-    div p {
-      color: green;
-    }
-
-    /* Селектор псевдокласу */
-    a:hover {
-      color: red;
-    }
-
-    .highlight:hover {
-      color: rgb(85, 255, 0);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 100px 1fr 100px;
+            grid-gap: 10px;
+        }
+        .header {
+            grid-column: 1 / 3;
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .sidebar {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .content {
+            background-color: lightcoral;
+            padding: 10px;
+        }
+        .content1 {
+            background-color: rgb(115, 14, 14);
+            padding: 10px;
+        }
+        .content2 {
+            background-color: rgb(76, 76, 205);
+            padding: 10px;
+        }
+        .content3 {
+            background-color: rgb(23, 150, 209);
+            padding: 10px;
+        }
+        .footer {
+            grid-column: 1 / 3;
+            background-color: lightgray;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-
-  <h1 class="head" style="color: purple">Заголовок сторінки</h1>
-  <p class="highlight">Це абзац з жовтим фоном.</p>
-  <p id="special">Це абзац з іншим стилем через id.</p>
-
-  <div>
-    <p>Абзац всередині div, який буде зеленого кольору.</p>
-  </div>
-
-  <a href="#" class="highlight">Наведіть на це посилання, щоб змінити його колір.</a>
-  <a href="#">Наведіть на це посилання, щоб змінити його колір.</a>
-
-  <form action="/submit" method="post">
-    <label for="name">Ім'я:</label>
-    <input type="text" id="name" name="name" required><br>
-  
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br>
-  
-    <label for="password">Пароль:</label>
-    <input type="password" id="password" name="password" required><br>
-  
-    <label for="gender">Стать:</label>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="male">Чоловік</label>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Жінка</label><br>
-  
-    <label for="hobbies">Хобі:</label>
-    <input type="checkbox" id="sport" name="hobbies" value="sport">
-    <label for="sport">Спорт</label>
-    <input type="checkbox" id="music" name="hobbies" value="music">
-    <label for="music">Музика</label><br>
-  
-    <label for="file">Завантажити файл:</label>
-    <input type="file" id="file" name="file"><br>
-  
-    <input type="submit" value="Надіслати">
-  </form>
-
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content1</div>
+        <div class="content1">Content2</div>
+        <div class="content2">Content3</div>
+        <div class="content3">Content4</div>
+        <div class="footer">Footer</div>
+    </div>
 </body>
 </html>
-
